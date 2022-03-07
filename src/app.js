@@ -11,7 +11,7 @@ const partialsPath = path.join(__dirname, "../templates/partials");
 hbs.registerPartials(partialsPath);
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 4400;
 
 app.set("views", viewsPath);
 
